@@ -37,23 +37,28 @@ p {
 ul {
   margin: 0;
   padding: 0;
-}
-
-.list {
   list-style: none;
 }
+
 .link {
   text-decoration: none;
 }
 
-/* .container {
-  width: 1170px;
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin: 0 auto;
-} */
 
-/*------Header page_navigation-------*/
+  outline: 2px solid tomato;
+}
+
+/*--------------Header page------------*/
 .header {
-  background-color: var(--background-brand-color-second);
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  background-color: grey;
 }
 
 .logo {
@@ -101,8 +106,9 @@ ul {
 }
 
 /*------------Hero------------*/
-.hero {
+.hero-wrap {
   background-image: url(../img/hero.jpg);
+  padding: 272px 100px 40px 100px;
 }
 
 .hero-list {
@@ -129,6 +135,8 @@ ul {
   line-height: 1.3636;
   text-transform: uppercase;
 
+  margin-bottom: 20px;
+
   color: rgba(157, 164, 189, 0.6);
 }
 
@@ -138,6 +146,8 @@ ul {
   line-height: 1.1805;
   letter-spacing: 0.05em;
 
+  margin-bottom: 20px;
+
   color: var(--background-brand-color-main);
 }
 
@@ -145,6 +155,8 @@ ul {
   font-size: 18px;
   line-height: 1.6666;
   letter-spacing: 0.02em;
+
+  margin-bottom: 144px;
 
   color: #9da4bd;
 }
@@ -166,6 +178,9 @@ ul {
 /*------------About------------*/
 
 .about {
+  padding-top: 120px;
+  padding-bottom: 120px;
+
   background-color: var(--background-brand-color-main);
 }
 
@@ -174,6 +189,8 @@ ul {
   font-size: 11px;
   line-height: 1.3636;
   text-transform: uppercase;
+
+  margin-bottom: 20px;
 
   color: var(--color-brand);
 }
@@ -184,6 +201,8 @@ ul {
   line-height: 1.1666;
   letter-spacing: 0.05em;
 
+  margin-bottom: 20px;
+
   color: var(--color-brand);
 }
 
@@ -192,6 +211,8 @@ ul {
   line-height: 1.6666;
   letter-spacing: 0.02em;
 
+  margin-bottom: 20px;
+
   color: #555555;
 }
 
@@ -199,6 +220,8 @@ ul {
   font-size: 14px;
   line-height: 1.8571;
   letter-spacing: 0.02em;
+
+  margin-bottom: 42px;
 
   color: #555555;
 }
@@ -231,6 +254,9 @@ ul {
 /*----------Services and prices------*/
 
 .prices {
+  padding-top: 120px;
+  padding-bottom: 120px;
+
   background-image: url(../img/poster.jpg);
 }
 
@@ -239,6 +265,8 @@ ul {
   font-size: 11px;
   line-height: 1.3636;
   text-transform: uppercase;
+
+  margin-bottom: 20px;
 
   color: rgba(157, 164, 189, 0.6);
 }
@@ -249,7 +277,15 @@ ul {
   line-height: 1.1666;
   letter-spacing: 0.05em;
 
+  margin-bottom: 44px;
+
   color: var(--background-brand-color-main);
+}
+
+.prices-list {
+  padding: 30px 20px;
+
+  outline: 2px solid white;
 }
 
 .prices-subtitle {
@@ -260,13 +296,33 @@ ul {
   color: #9da4bd;
 }
 
+.services-btn {
+  display: block;
+  margin: 0 auto;
+}
+
 /*------Our advantages/benefits------*/
 
 .benefits {
+  padding-top: 120px;
+  padding-bottom: 120px;
+
   background-color: var(--background-brand-color-main);
 }
 
+.benefits-item {
+  width: 170px;
+  height: 133px;
+  padding: 20px 24px;
+  text-align: center;
+
+  background: var(--background-brand-color-third);
+
+  outline: 2px solid tomato;
+}
+
 .numero {
+  font-weight: 700;
   font-size: 42px;
   line-height: 1.3571;
   text-align: center;
@@ -297,6 +353,8 @@ sup {
   line-height: 1.3636;
   text-transform: uppercase;
 
+  margin-bottom: 20px;
+
   color: var(--color-brand);
 }
 
@@ -305,6 +363,8 @@ sup {
   font-size: 42px;
   line-height: 1.1666;
   letter-spacing: 0.05em;
+
+  margin-bottom: 20px;
 
   color: var(--color-brand);
 }
@@ -320,6 +380,9 @@ sup {
 /*------------Our barbers------------*/
 
 .barbers {
+  padding-top: 120px;
+  padding-bottom: 120px;
+
   background-color: var(--background-brand-color-third);
 }
 
@@ -328,6 +391,8 @@ sup {
   font-size: 11px;
   line-height: 1.3636;
   text-transform: uppercase;
+
+  margin-bottom: 20px;
 
   color: var(--color-brand);
 }
@@ -338,6 +403,8 @@ sup {
   line-height: 1.1666;
   letter-spacing: 0.05em;
 
+  margin-bottom: 44px;
+
   color: var(--color-brand);
 }
 
@@ -347,6 +414,8 @@ sup {
   line-height: 1.3888;
   letter-spacing: 0.02em;
 
+  margin-bottom: 8px;
+
   color: var(--color-brand);
 }
 
@@ -354,6 +423,8 @@ sup {
   font-size: 14px;
   line-height: 1.3571;
   letter-spacing: 0.02em;
+
+  margin-bottom: 30px;
 
   color: var(--color-brand-accent);
 }
@@ -365,6 +436,9 @@ sup {
 /*------------Portfolio------------*/
 
 .portfolio {
+  padding-top: 120px;
+  padding-bottom: 120px;
+
   background-color: var(--background-brand-color-main);
 }
 
@@ -374,12 +448,17 @@ sup {
   line-height: 1.3636;
   text-transform: uppercase;
 
+  margin-bottom: 44px;
+
   color: var(--color-brand);
 }
 
 /*------Online-booking & Contacts------*/
 
 .booking {
+  padding-top: 130px;
+  padding-bottom: 120px;
+
   background-color: var(--color-brand);
 }
 
@@ -388,6 +467,9 @@ sup {
   font-size: 42px;
   line-height: 1.1666;
   letter-spacing: 0.05em;
+
+  margin-bottom: 44px;
+
   color: var(--background-brand-color-main);
 }
 
@@ -396,6 +478,9 @@ sup {
   font-size: 42px;
   line-height: 1.1666;
   letter-spacing: 0.05em;
+
+  margin-bottom: 40px;
+
   color: var(--background-brand-color-main);
 }
 
@@ -403,7 +488,13 @@ address {
   font-style: normal;
 }
 
-/*------Edd icons to contacts------*/
+.contacts-list {
+  margin-bottom: 70px;
+}
+
+.contacts-item:not(:last-child) {
+  margin-bottom: 20px;
+}
 
 .contacts-address-link {
   text-decoration: none;
@@ -454,6 +545,8 @@ address {
   line-height: 1.3636;
   text-transform: uppercase;
 
+  margin-bottom: 20px;
+
   color: var(--background-brand-color-main);
 }
 
@@ -468,6 +561,9 @@ address {
 /*------------footer------------*/
 
 footer {
+  padding-top: 56px;
+  padding-bottom: 56px;
+  
   background-color: var(--background-brand-color-third);
 }
 
