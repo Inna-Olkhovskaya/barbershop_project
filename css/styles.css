@@ -1,0 +1,495 @@
+:root {
+  --background-brand-color-main: #ffffff;
+  --background-brand-color-second: #9da4bd;
+  --background-brand-color-third: #f7f7f7;
+  --background-brand-color-forth: #e5e5e5;
+  --color-brand: #303030;
+  --color-brand-accent: #ff6c00;
+  --font-rel: "Raleway", sans-serif;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+
+/* .container {
+  width: 1170px;
+  margin: 0 auto;
+} */
+
+/*------Header page_navigation-------*/
+.header {
+  background-color: var(--background-brand-color-second);
+}
+
+.logo {
+  text-decoration: none;
+}
+
+.header-nav-link {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.3333;
+  letter-spacing: 0.1em;
+
+  color: var(--background-brand-color-main);
+}
+
+.header-nav-link:hover,
+.header-nav-link:focus {
+  color: var(--color-brand-accent);
+}
+
+.white-button {
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.3333;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+
+  width: 160px;
+  height: 40px;
+
+  color: var(--background-brand-color-main);
+  background-color: transparent;
+  border: 1px solid var(--color-brand-accent);
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.white-button:hover,
+.white-button:focus {
+  background-color: var(--color-brand-accent);
+  border: 1px solid var(--color-brand-accent);
+  border-radius: 25px;
+}
+
+/*------------Hero------------*/
+.hero {
+  background-image: url(../img/hero.jpg);
+}
+
+.hero-list {
+  background-color: var(--background-brand-color-main);
+}
+
+.hero-link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.3636;
+  letter-spacing: 0.2em;
+
+  color: var(--color-brand);
+}
+
+.hero-link:hover,
+.hero-link:focus {
+  color: var(--color-brand-accent);
+}
+
+.hero-uptitle {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.3636;
+  text-transform: uppercase;
+
+  color: rgba(157, 164, 189, 0.6);
+}
+
+.hero-title {
+  font-family: var(--font-rel);
+  font-size: 72px;
+  line-height: 1.1805;
+  letter-spacing: 0.05em;
+
+  color: var(--background-brand-color-main);
+}
+
+.hero-subtitle {
+  font-size: 18px;
+  line-height: 1.6666;
+  letter-spacing: 0.02em;
+
+  color: #9da4bd;
+}
+
+.hero-end-link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.3636;
+  letter-spacing: 0.1em;
+
+  color: rgba(157, 164, 189, 0.6);
+}
+
+.hero-end-link:hover,
+.hero-end-link:focus {
+  color: var(--background-brand-color-main);
+}
+
+/*------------About------------*/
+
+.about {
+  background-color: var(--background-brand-color-main);
+}
+
+.about-uptitle {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.3636;
+  text-transform: uppercase;
+
+  color: var(--color-brand);
+}
+
+#about {
+  font-family: var(--font-rel);
+  font-size: 42px;
+  line-height: 1.1666;
+  letter-spacing: 0.05em;
+
+  color: var(--color-brand);
+}
+
+.about-subtitle {
+  font-size: 18px;
+  line-height: 1.6666;
+  letter-spacing: 0.02em;
+
+  color: #555555;
+}
+
+.about-text {
+  font-size: 14px;
+  line-height: 1.8571;
+  letter-spacing: 0.02em;
+
+  color: #555555;
+}
+
+.black-button {
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.3333;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+
+  width: 160px;
+  height: 40px;
+
+  color: var(--color-brand);
+  background-color: transparent;
+  border: 1px solid var(--color-brand-accent);
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.black-button:hover,
+.black-button:focus {
+  background-color: var(--color-brand-accent);
+  border: 1px solid var(--color-brand-accent);
+  border-radius: 25px;
+}
+
+/*----------Services and prices------*/
+
+.prices {
+  background-image: url(../img/poster.jpg);
+}
+
+.prices-uptitle {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.3636;
+  text-transform: uppercase;
+
+  color: rgba(157, 164, 189, 0.6);
+}
+
+#prices {
+  font-family: var(--font-rel);
+  font-size: 42px;
+  line-height: 1.1666;
+  letter-spacing: 0.05em;
+
+  color: var(--background-brand-color-main);
+}
+
+.prices-subtitle {
+  font-size: 18px;
+  line-height: 1.6666;
+  letter-spacing: 0.02em;
+
+  color: #9da4bd;
+}
+
+/*------Our advantages/benefits------*/
+
+.benefits {
+  background-color: var(--background-brand-color-main);
+}
+
+.numero {
+  font-size: 42px;
+  line-height: 1.3571;
+  text-align: center;
+  letter-spacing: 0.05em;
+
+  color: var(--color-brand);
+}
+
+sup {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.375;
+  text-align: center;
+  color: var(--color-brand-accent);
+}
+
+.benefits-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.3636;
+
+  color: var(--color-brand);
+}
+
+.benefits-uptitle {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.3636;
+  text-transform: uppercase;
+
+  color: var(--color-brand);
+}
+
+.benefits-title {
+  font-family: var(--font-rel);
+  font-size: 42px;
+  line-height: 1.1666;
+  letter-spacing: 0.05em;
+
+  color: var(--color-brand);
+}
+
+.benefits-subtitle {
+  font-size: 18px;
+  line-height: 1.6666;
+  letter-spacing: 0.02em;
+
+  color: #555555;
+}
+
+/*------------Our barbers------------*/
+
+.barbers {
+  background-color: var(--background-brand-color-third);
+}
+
+.barbers-uptitle {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.3636;
+  text-transform: uppercase;
+
+  color: var(--color-brand);
+}
+
+#barbers {
+  font-family: var(--font-rel);
+  font-size: 42px;
+  line-height: 1.1666;
+  letter-spacing: 0.05em;
+
+  color: var(--color-brand);
+}
+
+.barbers-name {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.3888;
+  letter-spacing: 0.02em;
+
+  color: var(--color-brand);
+}
+
+.barbers-position {
+  font-size: 14px;
+  line-height: 1.3571;
+  letter-spacing: 0.02em;
+
+  color: var(--color-brand-accent);
+}
+
+/* DONT WORK ICON HOVER */
+.instagram img:hover {
+  color: var(--color-brand-accent);
+}
+/*------------Portfolio------------*/
+
+.portfolio {
+  background-color: var(--background-brand-color-main);
+}
+
+.portfolio-uptitle {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.3636;
+  text-transform: uppercase;
+
+  color: var(--color-brand);
+}
+
+/*------Online-booking & Contacts------*/
+
+.booking {
+  background-color: var(--color-brand);
+}
+
+.booking-title {
+  font-family: var(--font-rel);
+  font-size: 42px;
+  line-height: 1.1666;
+  letter-spacing: 0.05em;
+  color: var(--background-brand-color-main);
+}
+
+#contacts {
+  font-family: var(--font-rel);
+  font-size: 42px;
+  line-height: 1.1666;
+  letter-spacing: 0.05em;
+  color: var(--background-brand-color-main);
+}
+
+address {
+  font-style: normal;
+}
+
+/*------Edd icons to contacts------*/
+
+.contacts-address-link {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.6666;
+  letter-spacing: 0.02em;
+
+  color: var(--background-brand-color-second);
+}
+
+.contacts-address-link:hover,
+.contacts-address-link:focus {
+  color: var(--color-brand-accent);
+}
+
+.contacts-tel-link {
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 1.6666;
+  letter-spacing: 0.02em;
+
+  color: var(--background-brand-color-second);
+}
+
+.contacts-tel-link:hover,
+.contacts-tel-link:focus {
+  color: var(--color-brand-accent);
+}
+
+.contacts-mail-link {
+  font-size: 18px;
+  line-height: 1.6666;
+  letter-spacing: 0.02em;
+  text-decoration-line: underline;
+
+  color: var(--background-brand-color-second);
+}
+
+.contacts-mail-link:hover,
+.contacts-mail-link:focus {
+  color: var(--color-brand-accent);
+}
+
+.contacts-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.3636;
+  text-transform: uppercase;
+
+  color: var(--background-brand-color-main);
+}
+
+.contacts-time {
+  font-size: 18px;
+  line-height: 1.6666;
+  letter-spacing: 0.02em;
+
+  color: var(--background-brand-color-second);
+}
+
+/*------------footer------------*/
+
+footer {
+  background-color: var(--background-brand-color-third);
+}
+
+.sign {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.3636;
+  letter-spacing: 0.2em;
+
+  color: var(--background-brand-color-second);
+}
+
+.footer-link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.3636;
+  letter-spacing: 0.2em;
+
+  color: #303030;
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  color: var(--color-brand-accent);
+}
