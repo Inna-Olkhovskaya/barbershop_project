@@ -40,6 +40,10 @@ ul {
   list-style: none;
 }
 
+img {
+  display: block;
+}
+
 .link {
   text-decoration: none;
 }
@@ -61,8 +65,23 @@ ul {
   background-color: grey;
 }
 
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
 .logo {
   text-decoration: none;
+  margin-right: 131px;
+}
+
+.navigation {
+  margin-right: auto;
+}
+
+.header-nav {
+  display: flex;
+  gap: 30px;
 }
 
 .header-nav-link {
@@ -88,7 +107,7 @@ ul {
   letter-spacing: 0.09em;
   text-transform: uppercase;
 
-  width: 160px;
+  min-width: 160px;
   height: 40px;
 
   color: var(--background-brand-color-main);
@@ -105,14 +124,25 @@ ul {
   border-radius: 25px;
 }
 
+.header-btn {
+  margin-left: 40px;
+}
+
 /*------------Hero------------*/
+
+.hero-container {
+  display: flex;
+}
+
 .hero-wrap {
   background-image: url(../img/hero.jpg);
   padding: 272px 100px 40px 100px;
+  flex-grow: 1;
 }
 
 .hero-list {
   background-color: var(--background-brand-color-main);
+  width: 100px;
 }
 
 .hero-link {
@@ -157,8 +187,17 @@ ul {
   letter-spacing: 0.02em;
 
   margin-bottom: 144px;
+  max-width: 357px;
 
   color: #9da4bd;
+}
+
+.hero-end-list {
+  display: flex;
+  justify-content: end;
+  gap: 24px;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .hero-end-link {
@@ -182,6 +221,20 @@ ul {
   padding-bottom: 120px;
 
   background-color: var(--background-brand-color-main);
+}
+
+.about-container {
+  display: flex;
+  gap: 30px;
+}
+
+.about-list {
+  display: flex;
+  gap: 30px;
+}
+
+.about-wrap {
+  padding-right: 100px;
 }
 
 .about-uptitle {
@@ -260,6 +313,13 @@ ul {
   background-image: url(../img/poster.jpg);
 }
 
+.prices-wrap {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 44px;
+}
+
 .prices-uptitle {
   font-weight: 600;
   font-size: 11px;
@@ -282,13 +342,22 @@ ul {
   color: var(--background-brand-color-main);
 }
 
+.prices-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
 .prices-list {
   padding: 30px 20px;
+  width: calc((100% - 30px) / 2);
 
   outline: 2px solid white;
 }
 
 .prices-subtitle {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+
   font-size: 18px;
   line-height: 1.6666;
   letter-spacing: 0.02em;
@@ -308,6 +377,23 @@ ul {
   padding-bottom: 120px;
 
   background-color: var(--background-brand-color-main);
+}
+
+.benefits-container {
+  display: flex;
+  gap: 130px;
+}
+
+.benefits-wrap {
+  padding-right: 70px;
+}
+
+.benefits-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+
+  padding-left: 100px;
 }
 
 .benefits-item {
@@ -365,6 +451,7 @@ sup {
   letter-spacing: 0.05em;
 
   margin-bottom: 20px;
+  width: 430px;
 
   color: var(--color-brand);
 }
@@ -373,6 +460,8 @@ sup {
   font-size: 18px;
   line-height: 1.6666;
   letter-spacing: 0.02em;
+
+  width: 500px;
 
   color: #555555;
 }
@@ -384,6 +473,15 @@ sup {
   padding-bottom: 120px;
 
   background-color: var(--background-brand-color-third);
+}
+
+.barbers-list {
+  display: flex;
+  gap: 30px;
+}
+
+.barbers-item {
+  flex-basis: calc((100% - 60px) / 3);
 }
 
 .barbers-uptitle {
@@ -413,6 +511,7 @@ sup {
   font-size: 18px;
   line-height: 1.3888;
   letter-spacing: 0.02em;
+  text-align: center;
 
   margin-bottom: 8px;
 
@@ -423,16 +522,20 @@ sup {
   font-size: 14px;
   line-height: 1.3571;
   letter-spacing: 0.02em;
+  text-align: center;
 
   margin-bottom: 30px;
 
   color: var(--color-brand-accent);
 }
 
-/* DONT WORK ICON HOVER */
-.instagram img:hover {
-  color: var(--color-brand-accent);
+.barbers-soc-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
+
 /*------------Portfolio------------*/
 
 .portfolio {
@@ -440,6 +543,16 @@ sup {
   padding-bottom: 120px;
 
   background-color: var(--background-brand-color-main);
+}
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.portfolio-item {
+  width: calc((100% - 90px) / 4);
 }
 
 .portfolio-uptitle {
@@ -563,8 +676,20 @@ address {
 footer {
   padding-top: 56px;
   padding-bottom: 56px;
-  
+
   background-color: var(--background-brand-color-third);
+}
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
 }
 
 .sign {

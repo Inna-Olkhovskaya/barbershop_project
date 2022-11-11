@@ -19,27 +19,27 @@
 <body>
     <!--Header page-->
     <header class="header">
-        <div class="container">
-            <nav>
-                <a href="#" class="logo">
-                    <img src="./img/logo.svg" alt="logo">
-                </a>
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <img src="./img/logo.svg" alt="logo">
+            </a>
+            <nav class="navigation">
                 <ul class="header-nav">
-                    <li><a class="header-nav-link" href="#about">About</a></li>
-                    <li><a class="header-nav-link" href="#prices">Services and prices</a></li>
-                    <li><a class="header-nav-link" href="#barbers">Barbers</a></li>
-                    <li><a class="header-nav-link" href="#contacts">Contacts</a></li>
+                    <li class="header-nav-item"><a class="header-nav-link" href="#about">About</a></li>
+                    <li class="header-nav-item"><a class="header-nav-link" href="#prices">Services and prices</a></li>
+                    <li class="header-nav-item"><a class="header-nav-link" href="#barbers">Barbers</a></li>
+                    <li class="header-nav-item"><a class="header-nav-link" href="#contacts">Contacts</a></li>
                 </ul>
             </nav>
             <a class="header-nav-link" href="tel:+380441111111">+38 044 111 11 11</a>
-            <button class="white-button" type="button">Online-booking</button>
+            <button class="white-button header-btn" type="button">Online-booking</button>
         </div>
     </header>
 
     <main>
         <!-- Hero -->
         <section class="hero">
-            <div class="container">
+            <div class="container hero-container">
                 <ul class="hero-list">
                     <li class="hero-item">
                         <a class="hero-link link" href="http://" target="_blank" rel="noopener noreferrer">Instagram</a>
@@ -62,7 +62,7 @@
         </section>
         <!-- About -->
         <section class="about">
-            <div class="container">
+            <div class="container about-container">
                 <ul class="about-list">
                     <li class="about-item">
                         <img src="./img/about1.jpg" width="270" height="445" alt="beard shaping">
@@ -71,22 +71,24 @@
                         <img src="./img/about2.jpg" width="270" height="445" alt="haircut">
                     </li>
                 </ul>
-                <div>
+                <div class="about-wrap">
                     <p class="about-uptitle">About</p>
                     <h2 id="about">Best Barbershop in your city</h2>
-                    <p class="about-subtitle">If you want to add more confidence to your image, you should definitely
+                    <p class="about-subtitle">If you want to add more confidence to your image, you should
+                        definitely
                         visit
                         us.
                     </p>
                     <p class="about-text">
-                        We are a team that never stops at what has been achieved and are thirsty for changes. And when
+                        We are a team that never stops at what has been achieved and are thirsty for changes. And
+                        when
                         you
                         fall into the hands
-                        of our master, you will never be the same again. We are a team that is always "on the same wave"
+                        of our master, you will never be the same again. We are a team that is always "on the same
+                        wave"
                         with clients.
                         Therefore, we are always ready to improve everyone who comes to us!
                     </p>
-                    <button class="black-button" type="button">Online-booking</button>
                 </div>
             </div>
         </section>
@@ -95,6 +97,7 @@
             <div class="container">
                 <p class="prices-uptitle">Spend your time with the best masters</p>
                 <h2 id="prices">Services and prices</h2>
+                <div class="prices-wrap">
                 <ul class="prices-list">
                     <li class="prices-item">
                         <p class="prices-subtitle">Men’s haircut <span>from 300 uah.</span></p>
@@ -123,12 +126,13 @@
                         <p class="prices-subtitle">Camouflage of gray hair <span>from 200 uah.</span></p>
                     </li>
                 </ul>
+                </div>
                 <button class="services-btn white-button" type="button">Online-booking</button>
             </div>
         </section>
         <!-- Our advantages/benefits -->
         <section class="benefits">
-            <div class="container">
+            <div class="container benefits-container">
                 <ul class="benefits-list">
                     <li class="benefits-item">
                         <span class="numero">600</span><sup>+</sup>
@@ -147,7 +151,7 @@
                         <p class="benefits-text">Gifts for regular customers</p>
                     </li>
                 </ul>
-                <div>
+                <div class="benefits-wrap">
                     <p class="benefits-uptitle">Old traditional school</p>
                     <h2 class="benefits-title">¿Why people come to us?</h2>
                     <p class="benefits-subtitle">Only good things are said about us. But it's better to see and feel 1
@@ -276,7 +280,7 @@
         </section>
     </main>
     <footer>
-        <div class="container">
+        <div class="container footer-container">
             <p class="sign">&#169; Copyright 2020</p>
             <ul class="footer-list">
                 <li class="footer-item">
