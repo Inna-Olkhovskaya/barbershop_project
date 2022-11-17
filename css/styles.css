@@ -131,8 +131,8 @@ img {
 /*------------Hero------------*/
 
 .hero-container {
-  display: flex;
- }
+  position: relative;
+}
 
 .hero-list {
   display: flex;
@@ -162,7 +162,7 @@ img {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  
+
   flex-grow: 1;
 }
 
@@ -226,41 +226,48 @@ img {
 
 .hero-end-list {
   display: flex;
-  justify-content: end;
-  gap: 24px;
 
-  margin: 0 auto;
-  width: 100%;
+  position: absolute;
+  bottom: 40px;
+  right: 35px;
 }
 
-.hero-end-item {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  gap: 8px;
-
-  color: rgba(157, 164, 189, 0.6);
-  }
-
-.hero-end-item::after {
-  content: "";
-  width: 60px;
-  height: 1px;
-  background-color: currentColor;
-}
-
-.hero-end-item:hover,
-.hero-end-item:focus {
-  color: var(--background-brand-color-main);
+.hero-end-item:not(:last-child) {
+  margin-right: 24px;
 }
 
 .hero-end-link {
+  display: block;
+  position: relative;
+
   font-weight: 600;
   font-size: 11px;
   line-height: 1.3636;
   letter-spacing: 0.1em;
 
+  padding-bottom: 8px;
+  width: 60px;
+  height: 24px;
+
   color: rgba(157, 164, 189, 0.6);
+}
+
+.hero-end-link::after {
+  content: "";
+  display: block;
+  position: absolute;
+
+  width: 100%;
+  height: 1px;
+  left: 0;
+  bottom: 0;
+
+  background-color: currentColor;
+}
+
+.hero-end-link:hover,
+.hero-end-link:focus {
+  color: var(--background-brand-color-main);
 }
 
 /*------------About------------*/
