@@ -15,6 +15,7 @@
   --trans_visibility: visibility 300ms cubic-bezier(0.18, 0.78, 0.78, 0.23);
   --trans_scale: scale 300ms cubic-bezier(0.18, 0.78, 0.78, 0.23);
   --trans_rotate: rotate 300ms cubic-bezier(0.18, 0.78, 0.78, 0.23);
+  --trans_stroke: stroke 300ms cubic-bezier(0.18, 0.78, 0.78, 0.23);
 }
 body {
   font-family: "Open Sans", sans-serif;
@@ -977,6 +978,8 @@ sup {
 
 .contacts-address-link {
   display: flex;
+  align-items: center;
+
   text-decoration: none;
   font-weight: 700;
   font-size: 18px;
@@ -986,22 +989,28 @@ sup {
   color: var(--background-brand-color-second);
 
   transition: var(--trans_color);
+  transition: var(--trans_stroke);
 }
 
 .contact-icon {
   width: 24px;
   height: 24px;
+  margin-right: 16px;
 
-  stroke: var(--background-brand-color-second);
+  stroke: currentColor;
   fill: transparent;
 }
 
 .contacts-address-link:hover,
 .contacts-address-link:focus {
   color: var(--color-brand-accent);
-  }
+  stroke: currentColor;
+}
 
 .contacts-tel-link {
+  display: flex;
+  align-items: center;
+
   text-decoration: none;
   font-size: 18px;
   line-height: 1.6666;
@@ -1018,6 +1027,9 @@ sup {
 }
 
 .contacts-mail-link {
+  display: flex;
+  align-items: center;
+
   font-size: 18px;
   line-height: 1.6666;
   letter-spacing: 0.02em;
@@ -1121,6 +1133,7 @@ sup {
 .backdrop {
   position: fixed;
   top: 0;
+  z-index: 2;
 
   width: 100vw;
   height: 100vh;
