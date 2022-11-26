@@ -70,12 +70,9 @@ img {
 /*--------------Header page------------*/
 .header {
   position: absolute;
-  top: 0;
-  left: 159px;
-  z-index: 1;
-
-  padding-top: 40px;
-  padding-bottom: 40px;
+  width: 100%;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .header-container {
@@ -146,14 +143,9 @@ img {
 
 /*------------Hero------------*/
 
-.hero {
-  position: relative;
-}
-
 .hero-container {
   display: flex;
-  position: relative;
-}
+  }
 
 .hero-soc {
   display: flex;
@@ -259,7 +251,7 @@ img {
 
   position: absolute;
   bottom: 40px;
-  right: 35px;
+  right: 30px;
 }
 
 .hero-end-item:not(:last-child) {
@@ -268,8 +260,7 @@ img {
 
 .hero-end-link {
   display: block;
-  position: relative;
-
+  
   font-weight: 600;
   font-size: 11px;
   line-height: 1.3636;
@@ -287,8 +278,7 @@ img {
 .hero-end-link::after {
   content: "";
   display: block;
-  position: absolute;
-
+  
   width: 100%;
   height: 1px;
   left: 0;
@@ -839,101 +829,79 @@ sup {
   width: calc(50% + 15px);
   padding-top: 130px;
   padding-bottom: 120px;
+  padding-right: 30px;
 }
 
 /*--------------On-line form------------*/
 
-.form-wrap {
+.online-form {
   display: flex;
-  width: 570px;
+  flex-wrap: wrap;
   justify-content: space-between;
+}
+
+.online-wrap {
+  position: relative;
   margin-bottom: 44px;
 }
 
-.form-field {
-  position: relative;
-}
-
-.form-field::after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 1px;
-  cursor: pointer;
-  background-color: rgba(157, 164, 189, 0.4);
-}
-
-.form-input {
-  display: block;
-  width: 270px;
-  height: 24px;
-  cursor: pointer;
-  font-size: 14px;
-
-  background-color: transparent;
-  color: rgba(157, 164, 189, 0.4);
-  outline: transparent;
-  border: none;
-}
-
-.form-label {
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.3636;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-
-  color: rgba(157, 164, 189, 0.4);
-  transition: var(--trans_color), var(--trans_transform);
-}
-
-.form-input:hover + .form-label,
-.form-input:focus + .form-label,
-.form-input:not(:placeholder-shown) + .form-label {
+.online-title {
+  font-family: var(--font-rel);
+  font-size: 42px;
+  line-height: 1.1666;
+  letter-spacing: 0.05em;
+  margin-bottom: 44px;
   color: var(--background-brand-color-main);
-  transform: translateY(-100%);
 }
 
-.textarea-label {
-  display: block;
-  width: 570px;
-  height: 76px;
-  margin-bottom: 33px;
-}
-
-.form-textarea {
-  width: 100%;
-  height: 100%;
-  border: none;
-  background-color: transparent;
+.online-item {
   outline: transparent;
-  cursor: pointer;
-  resize: none;
+  border: none;
   font-size: 14px;
-  color: rgba(157, 164, 189, 0.4);
+  color: var(--background-brand-color-second);
+  background-color: transparent;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+  transition: var(--trans_br);
 }
 
-.form-textarea::placeholder {
+.online-item:focus,
+.online-item:not(:placeholder-shown) {
+  border-color: var(--background-brand-color-main);
+}
+
+.online-item:focus + .online-label,
+.online-item:not(:placeholder-shown) + .online-label {
+  transform: translateY(-100%);
+  color: var(--background-brand-color-main);
+}
+
+.online-input {
+  height: 24px;
+  width: 270px;
+}
+
+.online-label {
+  position: absolute;
+  left: 0;
   font-weight: 600;
   font-size: 11px;
   line-height: 1.3636;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-
   color: rgba(157, 164, 189, 0.4);
+  transition: var(--trans_transform), var(--trans_color);
 }
 
-.textarea-label::after {
-  content: "";
+.online-text-wrap {
+  position: relative;
   width: 100%;
-  height: 1px;
-  cursor: pointer;
-  background-color: rgba(157, 164, 189, 0.4);
-  display: block;
+  margin-bottom: 44px;
+}
+
+.online-text {
+  width: 100%;
+  height: 76px;
+  resize: none;
 }
 
 /* ------------Contact`s section-----------*/
@@ -943,17 +911,6 @@ sup {
   padding-top: 130px;
   padding-bottom: 120px;
   padding-left: 100px;
-}
-
-.online-title {
-  font-family: var(--font-rel);
-  font-size: 42px;
-  line-height: 1.1666;
-  letter-spacing: 0.05em;
-
-  margin-bottom: 44px;
-
-  color: var(--background-brand-color-main);
 }
 
 .contacts-address {
@@ -1003,7 +960,7 @@ sup {
 
 .contacts-address-link:hover,
 .contacts-address-link:focus {
-  color: var(--color-brand-accent);
+  color: var(--background-brand-color-main);
   stroke: currentColor;
 }
 
@@ -1023,7 +980,7 @@ sup {
 
 .contacts-tel-link:hover,
 .contacts-tel-link:focus {
-  color: var(--color-brand-accent);
+  color: var(--background-brand-color-main);
 }
 
 .contacts-mail-link {
@@ -1042,7 +999,7 @@ sup {
 
 .contacts-mail-link:hover,
 .contacts-mail-link:focus {
-  color: var(--color-brand-accent);
+  color: var(--background-brand-color-main);
 }
 
 .contacts-schedule-title {
@@ -1133,7 +1090,6 @@ sup {
 .backdrop {
   position: fixed;
   top: 0;
-  z-index: 2;
 
   width: 100vw;
   height: 100vh;
@@ -1281,7 +1237,7 @@ sup {
 
 .modal-comment {
   width: 100%;
-  height: 100px;
+  height: 80px;
   border: 1px solid var(--background-brand-color-second);
   background-color: transparent;
   border-radius: 5px;
@@ -1297,5 +1253,84 @@ sup {
 
 .modal-comment:hover,
 .modal-comment:focus {
+  border-color: var(--color-brand-accent);
+}
+
+.modal-msg {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.fb {
+  margin-bottom: 10px;
+}
+
+.modal-feedback {
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.check-text {
+  font-size: 12px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--color-brand);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.check-pol {
+  margin-bottom: 10px;
+}
+
+.policy-link {
+  text-decoration: underline;
+  color: var(--color-brand-accent);
+}
+
+/* How make customs checkbox without sprite */
+
+/* .check-text::before {
+content: "";
+width: 16px;
+height: 15px;
+border: 1px solid var(--color-brand);
+border-radius: 2px;
+} */
+
+/* .modal-check:checked + .check-text::before {
+  background-color: var(--color-brand-accent);
+  border: none;
+  background-image: url(../img/check.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+} */
+
+/* How make customs checkbox with sprite */
+
+.check-text span {
+  width: 16px;
+  height: 15px;
+  border: 1px solid var(--color-brand);
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+  transition: var(--trans_fill), var(--trans_bg);
+}
+
+.modal-check:checked + .check-text span {
+  background-color: var(--color-brand-accent);
+  border: none;
+  fill: var(--background-brand-color-main);
+}
+
+.modal-check:focus + .check-text span {
   border-color: var(--color-brand-accent);
 }

@@ -333,20 +333,22 @@
             <div class="container">
                 <section class="online">
                     <h2 class="online-title" data-aos="zoom-in-up">Online-booking</h2>
-                    <form class="form" autocomplete="off">
-                        <div class="form-wrap">
-                            <div class="form-field">
-                                <input type="text" class="form-input" id="name" placeholder=" ">
-                                <label for="name" class="form-label">Name*</label>
-                            </div>
-                            <div class="form-field">
-                                <input type="tel" class="form-input" id="tel" placeholder=" ">
-                                <label for="tel" class="form-label">Phone*</label>
-                            </div>
+                    <form class="online-form" autocomplete="off">
+                        <div class="online-wrap">
+                            <input type="text" class="online-input online-item" name="online-name" id="online-name"
+                                placeholder=" ">
+                            <label for="online-name" class="online-label">Name*</label>
                         </div>
-                        <label class="textarea-label">
-                            <textarea name="message" class="form-textarea" placeholder="message"></textarea>
-                        </label>
+                        <div class="online-wrap">
+                            <input type="tel" class="online-input online-item" name="online-tel" id="online-tel"
+                                placeholder=" ">
+                            <label for="online-tel" class="online-label">Phone*</label>
+                        </div>
+                        <div class="online-text-wrap">
+                            <textarea name="online-mess" class="online-text online-item" id="online-mess"
+                                placeholder=" "></textarea>
+                            <label for="online-mess" class="online-label">Message</label>
+                        </div>
                     </form>
                     <button class="white-button" type="submit">send</button>
                 </section>
@@ -371,8 +373,7 @@
                                     +38 044 111 11 11</a>
                             </li>
                             <li class="contacts-item">
-                                <a class="contacts-mail-link"
-                                    href="mailto:barbershop@email.com">
+                                <a class="contacts-mail-link" href="mailto:barbershop@email.com">
                                     <svg class="contact-icon" width="16" height="18">
                                         <use href="./img/symbol-defs.svg#icon-mail"></use>
                                     </svg>
@@ -440,6 +441,25 @@
                     <label class="input-label" for="user-text"></label>
                     <textarea class="modal-comment" name="user-text" id="user-text"
                         placeholder="Put your comments"></textarea>
+                </div>
+                <p class="modal-msg">Please, give me feedback</p>
+                <div class="modal-field fb">
+                    <label class="modal-feedback" for="call">Call me by phone</label>
+                    <input type="radio" name="feedback" id="call" value="call" checked>
+                    <label class="modal-feedback" for="write">Write me by mail</label>
+                    <input type="radio" name="feedback" id="write" value="write">
+                </div>
+                <div class="modal-field check-pol">
+                    <input type="checkbox" class="modal-check visually-hidden" id="policy">
+                    <label class="check-text" for="policy">
+                        <span>
+                            <svg class="check-icon" width="16" height="15">
+                                <use href="./img/symbol-defs.svg#icon-icon-check"></use>
+                            </svg>
+                        </span>
+                        I agree with the mailing and accept it
+                        <a href="#" class="policy-link link">Terms of the contract</a>
+                    </label>
                 </div>
                 <button class="black-button" type="submit">send</button>
             </form>
