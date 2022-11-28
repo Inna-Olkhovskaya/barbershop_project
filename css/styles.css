@@ -70,6 +70,7 @@ img {
 /*--------------Header page------------*/
 .header {
   position: absolute;
+  z-index: 1;
   width: 100%;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -145,7 +146,8 @@ img {
 
 .hero-container {
   display: flex;
-  }
+  position: relative;
+}
 
 .hero-soc {
   display: flex;
@@ -260,7 +262,7 @@ img {
 
 .hero-end-link {
   display: block;
-  
+
   font-weight: 600;
   font-size: 11px;
   line-height: 1.3636;
@@ -278,7 +280,7 @@ img {
 .hero-end-link::after {
   content: "";
   display: block;
-  
+
   width: 100%;
   height: 1px;
   left: 0;
@@ -1089,6 +1091,7 @@ sup {
 
 .backdrop {
   position: fixed;
+  z-index: 2;
   top: 0;
 
   width: 100vw;
