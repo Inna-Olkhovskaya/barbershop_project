@@ -406,7 +406,7 @@ img {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  min-width: 1600px;
+  /* min-width: 1600px; */
   margin: 0 auto;
 }
 
@@ -819,7 +819,7 @@ sup {
   background-repeat: no-repeat;
   background-position: right;
   background-size: calc(50% - 15px) 100%;
-  min-width: 1600px;
+  /* min-width: 1600px; */
   margin: 0 auto;
 }
 
